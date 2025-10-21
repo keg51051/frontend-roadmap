@@ -1,11 +1,14 @@
 # frontend-roadmap
 ## 프론트엔드 개발자를 위한 로드맵 노트 레포입니다.
+<a href="https://roadmap.sh/frontend">
+  <img alt="frontend-roadmap_1" src="https://github.com/user-attachments/assets/18cd63fd-da93-4fa0-a215-096a23959630" />
+</a>
 
 이미지를 클릭하면 원 출처로 이동합니다.
-<br><br>
+
 위 이미지를 기반으로 노트 필기가 진행됩니다.
 
-한글 표현이 어색한 용어는 영어로 작성되니 이해 부탁드립니다.
+한글 표기가 어색한 용어는 영어로 작성되니 이해 부탁드립니다.
 
 ## 목차
 1. [인터넷](#1-인터넷)
