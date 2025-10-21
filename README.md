@@ -1,10 +1,9 @@
 # frontend-roadmap
 ## 프론트엔드 개발자를 위한 로드맵 노트 레포입니다.
-<a href="https://roadmap.sh/frontend">
-  <img alt="frontend-roadmap_1" src="https://github.com/user-attachments/assets/18cd63fd-da93-4fa0-a215-096a23959630" />
-</a>
-
 이미지를 클릭하면 원 출처로 이동합니다.
+<a href="https://roadmap.sh/frontend">
+  <img alt="frontend-roadmap_1" src="https://github.com/user-attachments/assets/cccb8d4c-b4ef-4c4a-954a-a0d3c762d8ef" />
+</a>
 
 위 이미지를 기반으로 노트 필기가 진행됩니다.
 
