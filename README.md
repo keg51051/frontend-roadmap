@@ -65,11 +65,11 @@
 ### 용어 정리
 | 용어 | 설명 |
 |------|------|
-| **HTTP (Hypertext Transfer Protocol) / HTTPS (...Secure)** | 웹 통신 프로토콜로 브라우저와 서버 간 요청·응답 수행. HTTPS는 SSL/TLS 기반 암호화 적용 (기본 포트 80 / 443) |
+| **HTTP (Hypertext Transfer Protocol) <br> HTTPS (...Secure)** | 웹 통신 프로토콜로 브라우저와 서버 간 요청·응답 수행. HTTPS는 SSL/TLS 기반 암호화 적용 (기본 포트 80 / 443) |
 | **IP 주소** | 네트워크상의 장치를 식별하는 주소. IPv4는 32비트, IPv6는 128비트 체계로 더 많은 주소 제공 |
 | **도메인** | 사람이 인식하기 쉬운 주소로 IP 주소를 대신하여 사용 |
 | **DNS (Domain Name System)** | 도메인을 IP로 변환하는 네임 서버 시스템. 질의는 루트 → TLD → 권한 서버 순으로 진행 |
-| **TCP/IP(Transmission Control Protocol/Internet Protocol)** | 인터넷의 핵심 프로토콜 스택. IP는 경로 지정, TCP는 데이터 순서 및 오류 복구 담당 |
+| **TCP/IP(Transmission Control Protocol/<br>Internet Protocol)** | 인터넷의 핵심 프로토콜 스택. IP는 경로 지정, TCP는 데이터 순서 및 오류 복구 담당 |
 | **패킷** | 네트워크에서 전송되는 최소 데이터 단위. 헤더(정보)와 페이로드(내용)로 구성 |
 | **라우터** | 패킷의 목적지를 분석해 최적 경로로 전달하는 장치. 여러 라우팅 프로토콜(BGP, OSPF 등)을 사용 |
 | **모뎀** | 디지털 신호를 아날로그 신호로 변환해 전화선이나 광선을 통한 통신을 가능하게 하는 장치 |
