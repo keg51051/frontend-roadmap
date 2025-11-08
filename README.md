@@ -2,7 +2,7 @@
 ## 프론트엔드 개발자를 위한 로드맵 노트 레포입니다.
 이미지를 클릭하면 원 출처로 이동합니다.
 <a href="https://roadmap.sh/frontend">
-  <img alt="frontend-roadmap_1" src="https://github.com/user-attachments/assets/cccb8d4c-b4ef-4c4a-954a-a0d3c762d8ef" />
+  <img alt="frontend-roadmap_1-min" src="https://github.com/user-attachments/assets/e4a076c6-b15d-4306-aa17-e915afdbff81" />
 </a>
 
 위 이미지를 기반으로 노트 필기가 진행됩니다.
@@ -40,9 +40,10 @@
 24. PWAs
 25. Mobile Apps
 26. Desktop Apps
-<br><br>
-## 1. 인터넷
 
+<br><br>
+
+## 1. 인터넷
 - 네트워크는 서로 연결된 컴퓨터나 기기의 모임
 - 이 네트워크가 서로 연결된 커다란 네트워크가 인터넷
 - 모든 장치가 표준화된 프로토콜을 통해 데이터를 주고받음.
@@ -206,4 +207,55 @@
 - 비동기 데이터/컴포넌트 로딩 최적화
 - OAuth/JWT 로그인 로직
 - 웹 보안(SSL/TLS, 데이터 암호화)
+
+<br>
+
+## 2. HTML
+- HyperText Markup Language
+- 웹 페이지 구조와 의미를 정의하는 마크업 언어
+- 다양한 태그로 계층적 구조를 가짐
+- 모든 웹 프론트엔드의 기반, 브라우저가 해석
+
+### 기본 구조
+```
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>문서 제목</title>
+  </head>
+  <body>
+    <h1>제목</h1>
+    <p>본문 내용</p>
+  </body>
+</html>
+```
+
+### 주요 태그 및 역할
+- `<!DOCTYPE html>`: 문서가 HTML5 표준임을 선언
+- `<html>`: HTML 문서 루트
+- `<head>`: 메타데이터 영역 (인코딩, 제목, 스타일, 스크립트, 외부 리소스)
+- `<body>`: 실제 콘텐츠 표시 영역
+- `<h1> ~ <h6>`: 제목(heading), h1이 최상위 크기 및 중요도
+- `<p>`: paragraph, 단락(문단)
+- `<a href="">`: 하이퍼링크(내부/외부)
+- `<img src="" alt="">`: 이미지 표시, alt는 대체 텍스트(접근성)
+- `<ul>`(순서 없는), `<ol>`(순서 있는), `<li>`(항목): 리스트
+- `<table>`, `<tr>`, `<th>`, `<td>`: 테이블, 행(row), 헤더, 셀
+- `<form>`, `<input>`, `<textarea>` 등: 사용자 입력/전송 폼
+- `<button>`: 버튼
+- `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`: 시맨틱 태그 (문서의 논리적 섹션 구분)
+- `<br>`, `<hr>`: 라인 브레이크, 수평선
+
+### 태그 속성
+- class: 스타일과 스크립트 적용 대상 그룹 지정
+- id: 유니크한 문서 내 고유 식별자
+- style: 인라인 CSS 스타일 작성
+- src, href 등: 외부 자원 경로 지정 (이미지, 링크 등)
+- alt: 이미지 대체 텍스트, 접근성 필수
+- title: 툴팁 텍스트 제공
+- name, value: 폼 요소 식별 및 값
+- tabindex, role: 접근성 관련 속성
+
+
   
