@@ -15,8 +15,8 @@
     - [DNS 동작 과정](#dns-동작-과정)
     - [브라우저 동작 과정](#브라우저-동작-과정)
     - [실무 관련 주제](#인터넷-관련-프론트엔드-실무-주제)
-2. HTML
-3. CSS
+2. [HTML](#2-html)
+3. [CSS](#3-css)
 4. JavaScript
 5. TypeScript
 6. 버전 관리
@@ -258,32 +258,100 @@
 - tabindex, role: 접근성 관련 속성
 
 ### 특징 및 주의점
-- **구조적 언어**
+- 구조적 언어
   - 태그와 요소로 웹 컨텐츠의 구조와 의미를 계층적으로 설계
   - 모든 문서는 `<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`로 구성
-- **정적 문서 기반**
+- 정적 문서 기반
   - 주로 동적인 처리는 CSS와 JavaScript를 통해 해결
   - HTML 자체는 뷰의 기본 틀만 제공
-- **확장성 및 호환성**
+- 확장성 및 호환성
   - 모든 주요 웹 브라우저에서 지원
   - 브라우저별로 미묘한 렌더링 차이 발생 시, W3C 표준 준수 필요
-- **계층적 중첩**
+- 계층적 중첩
   - 부모-자식 구조로 요소 중첩, 잘못된 중첩은 렌더링 오류 또는 브라우저 자동 보정
-- **시맨틱 태그 권장**
+- 시맨틱 태그 권장
   - 의미 있는 태그(`header`, `main`, `section`, `article`, `footer` 등)로 문서를 논리적으로 분리
   - 접근성과 SEO 최적화에 도움
-- **블록/인라인 요소 구분**
+- 블록/인라인 요소 구분
   - 블록 요소(`<div>`, `<p>`, `<ul>`, `<table>` 등)는 한 줄 전체 차지
   - 인라인 요소(`<span>`, `<a>`, `<img>` 등)는 글자처럼 한 줄 내 배치
-- **속성과 역할별 태그**
+- 속성과 역할별 태그
   - 각 태그는 다양한 속성(`class`, `id`, `style`, `src`, `alt` 등)으로 기능 확장
   - 접근성 및 유지보수를 위해 alt, aria 속성, class/id 네이밍 체계 중요
-- **자동 오류 보정**
+- 자동 오류 보정
   - 태그가 닫히지 않아도 브라우저가 렌더링 과정에서 최대한 구조 자동 보정
   - 하지만 표준 문법·중첩을 지키는 것이 오류와 혼란 방지에 핵심
-- **실제 내용은 `<body>`에 위치**
-  - 사용자가 보는 화면(UI)의 모든 콘텐츠(텍스트, 이미지, 링크, 표 등)는 `<body>`에 포함
+- 실제 내용은 `<body>`에 위치
+  - UI의 모든 컨텐츠(텍스트, 이미지, 링크, 표 등)는 `<body>`에 포함
  
 이러한 특징과 규칙을 잘 지키면 웹 표준, 유지보수성, 접근성, SEO 모두에서 좋은 HTML을 만들 수 있음
 
-  
+<br>
+
+## 3. CSS
+- Cascading Style Sheets
+- 웹 페이지의 스타일과 레이아웃을 결정하는 스타일 시트 언어
+- HTML이 문서의 구조를 담당하면 CSS는 그 구조에 색상, 폰트, 여백, 정렬, 크기, 애니메이션 등의 시각적 디자인을 적용
+- CSS는 브라우저가 HTML DOM과 CSSOM을 해석해 스타일을 계산하고, 렌더 트리를 생성해 화면에 표시
+
+### 기본 구조
+```
+body {
+background-color: #f0f0f0;
+font-family: Arial, sans-serif;
+color: #333;
+}
+
+h1 {
+font-size: 24px;
+font-weight: bold;
+}
+
+p {
+line-height: 1.6;
+margin-bottom: 10px;
+}
+```
+
+### 주요 개념 및 구성 요소
+- Selector: 스타일을 적용할 HTML 요소를 지정 (예: 태그명, 클래스, 아이디, 속성 등)
+- Property: 변경할 스타일 종류(색상, 크기, 위치 등)
+- Value: 속성이 가지는 구체적 값 (예: `red`, `16px`, `center` 등)
+- Declaration Block: 속성과 값을 `{}`로 묶은 단위
+- Cascading: 여러 규칙이 충돌할 때 적용 우선순위 결정
+- Inheritance: 일부 스타일이 부모 요소로부터 자식에게 전달됨
+- Box Model: 요소의 크기와 여백, 테두리를 계산하는 기본 원리 (content, padding, border, margin)
+- Positioning: 요소 위치 지정 방식 (static, relative, absolute, fixed, sticky)
+- Display: 요소의 레이아웃 타입 (block, inline, flex, grid 등)
+- Flexbox & Grid: 효율적인 레이아웃 배치 도구
+- Media Query: 반응형 디자인을 위한 화면 크기별 스타일 적용
+
+### 주요 CSS 속성
+- 색상 및 배경: `color`, `background-color`, `background-image`  
+- 텍스트: `font-family`, `font-size`, `font-weight`, `line-height`, `text-align`, `text-decoration`  
+- 박스 모델: `margin`, `padding`, `border`, `width`, `height`  
+- 레이아웃: `display`, `position`, `top`, `left`, `right`, `bottom`, `z-index`  
+- 플렉스박스: `flex`, `justify-content`, `align-items`, `flex-direction`  
+- 기타: `opacity`, `visibility`, `overflow`, `cursor`, `transition`, `animation`
+
+### CSS 적용 방법
+- 인라인 스타일: HTML 태그 내 `style` 속성에 직접 작성
+- 내부 스타일 시트: `<style>` 태그 내 CSS 작성
+- 외부 스타일 시트: `.css` 파일로 분리 후 HTML에서 `<link>` 태그로 연결 (권장)
+
+### 특징 및 주의점
+- CSS는 선택자 우선순위, 상속, 캐스케이딩 규칙이 복잡하여 잘못 설계하면 유지보수가 어려움  
+- 범용 클래스명과 명확한 네이밍 컨벤션(BEM 등) 사용 권장  
+- 브라우저별 지원 차이, 벤더 프리픽스 고려  
+- 과도한 인라인 스타일 사용 피하고, 외부 스타일 시트 사용 권장  
+- 반응형 디자인 위해 미디어 쿼리와 유연한 레이아웃 기법 필수  
+- CSS는 웹 접근성, 성능, 사용자 경험 개선에 핵심 역할 수행
+
+
+
+
+
+
+
+
+
