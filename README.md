@@ -17,7 +17,7 @@
     - [실무 관련 주제](#인터넷-관련-프론트엔드-실무-주제)
 2. [HTML](#2-html)
 3. [CSS](#3-css)
-4. JavaScript
+4. [JavaScript](#4-javascript)
 5. TypeScript
 6. 버전 관리
 7. VCS 호스팅
@@ -347,9 +347,61 @@ margin-bottom: 10px;
 - 반응형 디자인 위해 미디어 쿼리와 유연한 레이아웃 기법 필수  
 - CSS는 웹 접근성, 성능, 사용자 경험 개선에 핵심 역할 수행
 
+<br>
 
+## 4. JavaScript
+- 웹 페이지를 동적으로 만들고 사용자와 상호작용을 가능하게 하는 스크립트 언어
+- HTML과 CSS가 구조와 스타일을 담당, JS(JavaScript)는 웹 페이지 동작과 기능을 구현
+- 모든 주요 브라우저에서 지원하며 웹 개발 3대 핵심 기술 중 하나
 
+### 기본 구조
+```
+// 변수 선언
+let message = "Hello, World!";
 
+// 함수 정의
+function greet(name) {
+  return Hello, ${name}!;
+}
+
+// 조건문
+if (message) {
+  console.log(greet("User"));
+}
+
+// 반복문
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+```
+
+### 주요 개념
+- 데이터 타입: Number, String, Boolean, Null, Undefined, Symbol, Object (배열, 함수 포함)
+- 함수: 일급 객체로 취급, 익명 함수, 화살표 함수 등 다양한 표현법 지원
+- 이벤트 기반 프로그래밍: 클릭, 입력, 로드 등 사용자 이벤트에 반응하는 코드 작성 가능
+- 비동기 처리: 콜백 함수, Promise, async/await로 비동기 작업 처리
+- DOM 조작: `document` 객체를 통해 HTML 요소를 선택, 변경, 추가, 삭제 가능
+- 브라우저 API 활용: Fetch API, LocalStorage, SessionStorage, Geolocation 등 다양한 웹 API 지원
+- 객체 지향 및 함수형 프로그래밍: 둘 다 지원, 다양한 설계 사용 가능
+- 에러 처리: try/catch로 예외 처리
+- 모듈 시스템: ES6부터 `import`와 `export` 지원, 코드 분할과 재사용 가능
+- 호출 스택과 이벤트 루프: 동기/비동기 실행 구조 이해 필수
+
+### 주요 메서드 및 문법
+- 배열: `.map()`, `.filter()`, `reduce()`, `.forEach()`
+- 객체 리터럴, 전개 연산자(`...`)
+- 템플릿 리터럴(백틱)
+- 클래스와 상속
+- 익명 함수, 콜백 함수
+- 화살표 함수 (`() => {}`)로 간결한 함수 표현
+
+### 특징 및 주의점
+- 동적 타이핑 언어로 타입 변환에 주의
+- 브라우저 호환성 고려 (특히 ES6 이후 기능)
+- 비동기 코드 작성 시 callback hell 방지 방법 숙지 (비동기 처리 중점)
+- 전역 변수 남용 금지, 모듈화 필요
+- DOM 업데이트는 가급적 최소화 => 성능 문제
+- 클로저, 스코프, this 키워드에 대한 명확한 이해 필수
 
 
 
