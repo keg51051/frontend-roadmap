@@ -18,7 +18,7 @@
 2. [HTML](#2-html)
 3. [CSS](#3-css)
 4. [JavaScript](#4-javascript)
-5. TypeScript
+5. [TypeScript](#5-typescript)
 6. 버전 관리
 7. VCS 호스팅
 8. 패키지 관리자
@@ -402,6 +402,103 @@ for (let i = 0; i < 5; i++) {
 - 전역 변수 남용 금지, 모듈화 필요
 - DOM 업데이트는 가급적 최소화 => 성능 문제
 - 클로저, 스코프, this 키워드에 대한 명확한 이해 필수
+
+## 5. TypeScript
+- JavaScript의 상위(슈퍼셋) 언어, 정적 타입을 기반으로 코드를 더 안전하게 작성할 수 있도록 설계됨
+- 마이크로소프트에서 개발한 오픈 소스 언어이며, 코드는 컴파일(트랜스파일) 과정을 거쳐 일반 JavaScript로 변환되어 실행
+- JavaScript와 100% 호환되며, 최신 JS 문법(ES6+)을 사전에 활용 가능
+
+### 기본 문법
+```
+// 기본 타입 선언
+let isDone: boolean = false;
+let total: number = 100;
+let name: string = "Jane Doe";
+
+// 배열과 튜플
+let list: number[] = [1, 2, 3];
+let tuple: [string, number] = ["Jane", 30];
+
+// 함수 타입 선언과 사용
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+// 함수 타입 변수
+let myAdd: (x: number, y: number) => number = function (x, y) {
+  return x + y;
+};
+
+// 인터페이스 정의 및 사용
+interface Person {
+  firstName: string;
+  lastName: string;
+  age?: number;  // 선택적 속성
+}
+
+function greet(person: Person): string {
+  return `Hello, ${person.firstName} ${person.lastName}`;
+}
+
+const user: Person = { firstName: "John", lastName: "Smith" };
+console.log(greet(user));
+
+// 제네릭 함수
+function identity<T>(arg: T): T {
+  return arg;
+}
+
+let output1 = identity<string>("myString");
+let output2 = identity<number>(100);
+
+// 유니언 타입과 타입 가드
+function padLeft(value: string, padding: string | number) {
+  if (typeof padding === "number") {
+    return Array(padding + 1).join(" ") + value;
+  }
+  if (typeof padding === "string") {
+    return padding + value;
+  }
+  throw new Error(`Expected string or number, got '${typeof padding}'.`);
+}
+
+// 비동기 함수 예시
+async function fetchData(url: string): Promise<string> {
+  const response = await fetch(url);
+  const data = await response.text();
+  return data;
+}
+```
+
+### 주요 개념
+- 정적 타입 지정으로 컴파일 시점에 오류 발견 가능
+- 타입 추론 지원으로 선언 생략 가능
+- 인터페이스와 타입 별칭으로 객체 구조 정의 및 재사용
+- Generic으로 재사용 가능한 타입 작성
+- Union, Intersection 타입으로 복잡한 타입 조합 가능
+- 코드 모듈화
+
+### 특징
+- JavaScript 상위 집합(Superset)으로 기존 JS 코드도 실행 가능
+- 컴파일 단계에서 타입 검사 수행, 런타임 오류 감소
+- 점진적 도입 가능, 대형 프로젝트에 강점
+- 뛰어난 IDE 지원으로 생산성 향상
+- 객체지향 프로그래밍
+
+### 주의점
+- 타입 선언 누락 시 타입 불일치 위험
+- 타입 시스템 학습에 시간 필요
+- 런타임 타입 체크 불가(컴파일에만 적용)
+- 컴파일 과정 필수
+- 복잡한 타입 작성은 코드 가독성 저해
+
+
+
+
+
+
+
+
 
 
 
