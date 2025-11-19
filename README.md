@@ -498,14 +498,14 @@ async function fetchData(url: string): Promise<string> {
 
 
 ## 17. SSR
-SSR과 CSR의 개념을 알기 전, SPA(Single Page Application)와 MPA(Multi Page APplication)을 알아야 한다.
+SSR과 CSR의 개념을 알기 전, SPA와 MPA을 알아야 한다.
 
-### SPA
+### SPA (Single Page Application)
 - 하나의 페이지로 구성된 웹 어플리케이션
 - 하나의 페이지기 때문에 이벤트 발생 시 고정된 헤더에 메인화면이나 이벤트가 발생한 부분만 바뀜
 - 최근 많이 쓰는 React나 Vue 등이 사용하는 방식
 
-### MPA
+### MPA (Multi Page Application)
 - 탭 이동 시 서버로부터 새로운 HTML을 받아와 페이지 전체를 렌더링하는 방식
 - 웹 페이지를 구성하는 고전적인 방식
 
