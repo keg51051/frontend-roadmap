@@ -403,6 +403,8 @@ for (let i = 0; i < 5; i++) {
 - DOM 업데이트는 가급적 최소화 => 성능 문제
 - 클로저, 스코프, this 키워드에 대한 명확한 이해 필수
 
+<br>
+
 ## 5. TypeScript
 - JavaScript의 상위(슈퍼셋) 언어, 정적 타입을 기반으로 코드를 더 안전하게 작성할 수 있도록 설계됨
 - 마이크로소프트에서 개발한 오픈 소스 언어이며, 코드는 컴파일(트랜스파일) 과정을 거쳐 일반 JavaScript로 변환되어 실행
@@ -492,7 +494,7 @@ async function fetchData(url: string): Promise<string> {
 - 컴파일 과정 필수
 - 복잡한 타입 작성은 코드 가독성 저해
 
-
+<br>
 
 
 
